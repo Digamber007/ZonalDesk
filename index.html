@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>  
+<head>  
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+    <style type="text/css">
+        
+        .content {
+	width: auto;
+	margin-left: 250px;
+	height: 100%;
+	background-color: #fff;
+	padding:15px;
+} 
+.content {
+	color: #424242;
+	font-size:0.9em; 
+}
+
+div#box {
+	margin-top:15px;
+}
+div#box .box-top {
+	color:#fff;
+	text-shadow:0px 1px #000;
+	background-color:#2980b9;
+	padding:5px;
+	font-weight:300;
+} 
+.box-panel {
+	padding:15px;
+	background-color:#D9DDDE;
+}
+
+</style>
+</head>  
+<body>  
+  
+  <h1></h1>
+<form action="SaveServlet" method="post">
+    <div class="content">
+            <div id="box">
+					
+                <div class="box-top">News</div>
+				Add New Group
+                <div class="box-panel">
+                    <table>
+                    <tr><td>group_id:</td><td><input type="text" name="name"/></td></tr> 
+                    <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>  
+                    <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>  
+                    <tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
+                    <tr><td>Mobile:</td><td><input type="number" name="mobile"/></td></tr>  
+                    <tr><td colspan="2"><input type="submit" value="SaveGroup"/></td></tr>  
+                    </table>
+                </div><br/>
+				<a href="ViewServlet">viewGroup</a>
+            </div>    
+        
+    </div>
+</form>  
+  
+</body>  
+</html>  
